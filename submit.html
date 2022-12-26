@@ -10,32 +10,41 @@
 
     <link rel="icon" type="image/x-icon" href="./favicon/favicon-16x16.png" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/accountStatusStyle.css">
     <link rel="stylesheet" type="text/css" href="./css/submitStyle.css">
 
 </head>
 
 <body>
+<main>
+    <div class="container">
+        <section id="img">
+            <img src="./images/five.png">
+        </section>
 
-    <img src="./images/five.png">
+        <div id="text_btn">
+            <section id="text">
+                <form action="success.html">
+                    <label for="fname">Full Name:</label><br>
+                        <input type="text" name="username" autocomplete="off" required placeholder="Cassio Takarada">
 
-    <h3>Full Name:</h3>
-    <form>
-        <textarea>Cassio Takarada</textarea>
-    </form>
+                    <label>Email:</label><br>
+                        <input type="email" name="email" autocomplete="off" required placeholder="cassio.takarada.pb@compasso.com.br">
 
-    <h3>Email:</h3>
-    <form>
-        <textarea>cassiotakarada@gmail.com</textarea>
-    </form>
+                    <label>Age</label><br>
+                        <input type="number" name="age" autocomplete="off" required id="age" placeholder="-- --"><br>
 
-    <h3>Age:</h3>
-    <form>
-        <textarea>-- --</textarea>
-    </form>
-
-    <button>Back</button>
-    <button>Submit</button>
-    
+                    <section id="text">
+                        <div id="btns">
+                            <a href="comments.html"><button type="button">Back</button></a>  
+                            <a href="success.html"><button type="submit">Submit</button></a>    
+                        </div>
+                    </section>
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
 </body>
 
 </html>
