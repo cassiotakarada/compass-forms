@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="./css/decisionMakingStyle.css">
     <link rel="stylesheet" type="text/css" href="./css/commentsStyle.css">
 
+    <script src="countDown.js" defer></script>
+
 </head>
 
 <body>
@@ -30,8 +32,8 @@
 
             <section id="text">
                     <form>
-                        <textarea>  
-        </textarea>
+                        <textarea type="text" maxlength="130" name="tweet" id="textbox" class="form-control" rows="10" cols="60"></textarea>
+                        <span id="char_count">0/130</span>
                     </form>
             </section>
 

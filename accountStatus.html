@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/accountStatusStyle.css">
 
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -26,11 +28,11 @@
             <section id="text">
                 <h3>What is the status of your account?</h3>
                 <div class="custom_select">
-                    <select name="format" id="format">
-                        <option selected disabled> Choose a status</option>
-                        <option value="notCreated"> I have not created an account yet.</option>
-                        <option value="notActive"> I have created an account but I do not operate</option>
-                        <option value="active"> I have created and I do operate oftenly</option>
+                    <select name="format" id="format" required>
+                        <option selected disabled value=""></option>
+                        <option value="1"> I have not created an account yet.</option>
+                        <option value="2"> I have created an account but I do not operate</option>
+                        <option value="3"> I have created and I do operate oftenly</option>
                     </select>
                     <span class="custom-arrow"></span>
                 </div>
@@ -41,31 +43,31 @@
                 
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="radio" name="question2"> Stock market
+                        <input type="radio" name="question2" id="check1" onclick="enable()"> Stock market
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="radio" name="question2"> Foreign exchange
+                        <input type="radio" name="question2" id="check2" onclick="enable()"> Foreign exchange
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="radio" name="question2"> Commodity
+                        <input type="radio" name="question2" id="check3" onclick="enable()"> Commodity
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="radio" name="question2"> Bond market
+                        <input type="radio" name="question2" id="check4" onclick="enable()"> Bond market
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="radio" name="question2"> Cryptocurrency market
+                        <input type="radio" name="question2" id="check5" onclick="enable()"> Cryptocurrency market
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -74,7 +76,7 @@
             <section id="text">
                 <div id="btns">
                     <a href="introduction.html"><button>Back</button></a>
-                    <a href="decisionMaking.html"><button>Next</button></a>
+                    <a href="decisionMaking.html"><button disabled="true" id="nextBtn">Next</button></a>
                 </div>
 
                 <div id="btns">

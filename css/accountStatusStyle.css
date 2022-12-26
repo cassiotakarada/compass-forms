@@ -15,6 +15,10 @@
     --black: #000000;
 }
 
+main {
+    margin-top: -2rem;
+}
+
 h3 {
     line-height: 3vw;
     font-size: clamp(0.8rem, 2vw, 1.813rem);

@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/decisionMakingStyle.css">
 
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                 <h3>How do you decide to invest?</h3>
                 <div class="custom_select">
                     <select name="format" id="format">
-                        <option selected disabled> Choose a status</option>
+                        <option selected disabled></option>
                         <option value="notCreated"> I have not invested yet</option>
                         <option value="notActive"> I invest based on studies</option>
                         <option value="active"> I invest base on my feeling</option>
@@ -41,25 +43,25 @@
                 
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="checkbox"> Books and articles
+                        <input type="checkbox" id="check1" onclick="enable()"> Books and articles
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="checkbox"> YouTube tutorial videos
+                        <input type="checkbox" id="check2" onclick="enable()"> YouTube tutorial videos
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="checkbox"> Online of face to face courses
+                        <input type="checkbox" id="check3" onclick="enable()"> Online of face to face courses
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="container2">
                     <label class="custom-checkbox">
-                        <input type="checkbox"> Experience with little investment
+                        <input type="checkbox" id="check4" onclick="enable()"> Experience with little investment
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -68,7 +70,7 @@
             <section id="text">
                 <div id="btns">
                     <a href="accountStatus.html"><button>Back</button></a>
-                    <a href="comments.html"><button>Next</button></a>
+                    <a href="comments.html"><button disabled="true" id="nextBtn" >Next</button></a>
                 </div>
 
                 <div id="btns">

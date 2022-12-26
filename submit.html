@@ -24,30 +24,23 @@
 
         <div id="text_btn">
             <section id="text">
-                <h3>Full Name:</h3>
-                <form>
-                    <textarea>
-    Cassio Takarada</textarea>
-                </form>
+                <form action="success.html">
+                    <label for="fname">Full Name:</label><br>
+                        <input type="text" name="username" autocomplete="off" required placeholder="Cassio Takarada">
 
-                <h3>Email:</h3>
-                <form>
-                    <textarea>
-    cassiotakarada@gmail.com</textarea>
-                </form>
+                    <label>Email:</label><br>
+                        <input type="email" name="email" autocomplete="off" required placeholder="cassio.takarada.pb@compasso.com.br">
 
-                <h3>Age:</h3>
-                <form>
-                    <textarea id="age">
-    -- --</textarea>
-                </form>
-            </section>
+                    <label>Age</label><br>
+                        <input type="number" name="age" autocomplete="off" required id="age" placeholder="-- --"><br>
 
-            <section id="text">
-                <div id="btns">
-                    <a href="decisionMaking.html"><button>Back</button></a>
-                    <a href="success.html"><button>Submit</button></a>
-                </div>
+                    <section id="text">
+                        <div id="btns">
+                            <a href="comments.html"><button type="button">Back</button></a>  
+                            <a href="success.html"><button type="submit">Submit</button></a>    
+                        </div>
+                    </section>
+                </form>
             </section>
         </div>
     </div>

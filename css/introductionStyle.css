@@ -19,6 +19,13 @@
     width: 25rem;
 }
 
+#btns {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+}
+
 p {
     margin-top: 5%;
 }
@@ -79,6 +86,13 @@ p {
         max-height: 100%;
         width: 50%;
         height: 50%;
+    }
+    #btns {
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 5%;
     }
 
 }
