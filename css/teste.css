@@ -1,0 +1,11 @@
+main{
+    display: flex;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url('/images/two.png');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+  }

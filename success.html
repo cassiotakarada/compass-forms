@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucess</title>
+    <title>Success</title>
 
     <link rel="icon" type="image/x-icon" href="./favicon/favicon-16x16.png" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/successStyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/success.css">
+    <script src="success.js" defer></script>
 
 </head>
-
 <body>
 
-    <!-- css inline será removido no futuro -->
-    <img src="./images/check.png" style="width: 100px">
-    <h1>Registration completed successfully</h1>
-    
-</body>
+<main>
+  <div id="major">
+    <div id="here" onclick="makeOne()" title="Trigger the success animation">
+      <div class="box">
+        <div class="smallCheck"></div>
+        <div class="bigCheck"></div>
+        <div class="circle"></div>
+        <div id="textSuccess">
+          <br><h1>Registration completed successfully</h1>
+        </div>
+      </div>
+    </div>
 
+
+    <div id="btns">
+      <a href="index.html"><button>Go back Home</button></a>
+    </div>
+  </div>
+
+  <section class="wallpaper"><img src="/images/zero.png"></section>
+</main>
+
+</body>
 </html>

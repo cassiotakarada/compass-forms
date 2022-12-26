@@ -8,32 +8,11 @@
 :root {
     --white: #FFF;
     --green: #3EB25E;
-    --grey: #BFBFBF;
+    --light-green: #3EB25E;
+    --yellow: #FFFF7D;
+    --grey: #475242;
+    --light-grey: #BFBFBF;
     --black: #000000;
-}
-
-.container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin-top: 7.5%;
-}
-
-#img {
-    
-}
-
-#text {
-    text-align: center;
-}
-
-#img img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
 }
 
 h1 {
@@ -53,62 +32,168 @@ button {
     font-size: clamp(0.5rem, 3vw, 1.375rem);
     border: none;
     border-radius: 2.188rem;
-    width: 20vw;
-    max-width: 12rem;
+    width: 15vw;
     cursor: pointer;
     margin-top: 15%;
 }
 
-@media only screen and (max-width: 480px) {
+button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: bolder;
+}
+
+li {
+    list-style-type: none;
+}
+
+select {
+    padding: 0.0em 1.5em;
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+    font-size: large;
+    width: 70%;
+    height: 25px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 0.6rem solid var(--light-green);
+    transform: translate(27.5%, -260%);
+}
+
+.custom-arrow:hover {
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 0.6rem solid var(--green);
+    transform: translate(27.5%, -260%);
+}
 
 .container {
-    display: block;
+    display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-}
-
-#img {
-    margin-left: 0;
-    position: relative;
-    width: 100%;
+    gap: 5%;
+    margin-top: 7.5%;
 }
 
 #text {
-    margin-right: 0 ;
     text-align: center;
 }
 
 #img img {
-    display: block;
-    margin-top: 20%;
-    margin-left: 17.5%;
-    margin-bottom: 5%;
     max-width: 100%;
     max-height: 100%;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
-h1 {
-    color: var(--black);
-    font-size: clamp(1rem, 8vw, 6.938rem);
-}
 
-h3 {
-    color: var(--black);
-    font-size: clamp(0.5rem, 3vw, 1.813rem);
-}
 
-button {
-    background-color: var(--green);
-    color: var(--white);
-    font-size: clamp(0.5rem, 3vw, 1.375rem);
-    border: none;
-    border-radius: 2.188rem;
-    width: 20vw;
-    cursor: pointer;
-    margin-top: 7%;
-}
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        color: var(--black);
+        font-size: clamp(1rem, 8vw, 6.938rem);
+    }
+    
+    h3 {
+        color: var(--black);
+        font-size: clamp(0.5rem, 3vw, 1.813rem);
+    }
+    
+    button {
+        background-color: var(--green);
+        color: var(--white);
+        font-size: clamp(0.5rem, 3vw, 1.375rem);
+        border: none;
+        border-radius: 2.188rem;
+        width: 20vw;
+        cursor: pointer;
+        margin-top: 7%;
+    } 
+
+    select {
+        padding: 0.0em 1.5em;
+        border: 1px solid var(--light-grey);
+        border-radius: 10px;
+        font-size: large;
+        width: 70%;
+        height: 25px;
+        cursor: pointer;
+        appearance: none;
+    }
+    
+    .custom-select {
+        display: flex;
+        position: relative;
+    }
+    
+    .custom-arrow {
+        position: absolute;
+        display: block;
+        width: 0; 
+        height: 0; 
+        border-left: 0.45rem solid transparent;
+        border-right: 0.45rem solid transparent;
+        border-top: 0.45rem solid var(--light-green);
+        transform: translate(27.5%, -310%);
+    }
+    
+    .custom-arrow:hover {
+        position: absolute;
+        display: block;
+        width: 0; 
+        height: 0; 
+        border-left: 0.45rem solid transparent;
+        border-right: 0.45rem solid transparent;
+        border-top: 0.45rem solid var(--green);
+        transform: translate(27.5%, -310%);
+    }
+
+    .container {
+        display: block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img {
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    #text {
+        margin-right: 0 ;
+        text-align: center;
+    }
+
+    #img img {
+        display: block;
+        margin-top: 20%;
+        margin-left: 17.5%;
+        margin-bottom: 5%;
+        max-width: 100%;
+        max-height: 100%;
+        width: 50%;
+        height: 50%;
+    }
 
 }
